@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
 }
 header {
@@ -10,6 +10,12 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+header .tagline {
+    display: block;
+    font-size: 1.2em;
+    color: #ffdd57;
+    margin-top: 5px;
 }
 header a {
     color: #66b3ff;
@@ -29,7 +35,7 @@ nav li {
     text-decoration: none;
 }
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
@@ -44,6 +50,13 @@ section h2 {
     padding: 15px;
     background-color: #ecf0f1;
     cursor: pointer;
+}
+section .content ul {
+    margin: 0;
+}
+#publications .content {
+    column-count: 2;
+    column-gap: 20px;
 }
 section .content {
     padding: 15px;

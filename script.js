@@ -9,4 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    if (window.Typed) {
+        new Typed('#typed', {
+            strings: ['Ph.D. Candidate', 'Data Scientist', 'Researcher'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    }
 });
