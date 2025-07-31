@@ -1,62 +1,37 @@
-:root {
-    --charcoal-blue: #2c3e50;
-    --academic-blue: #3498db;
-    --silver-gray: #95a5a6;
-    --wet-asphalt: #34495e;
-    --white: #ffffff;
-}
-
-html {
-    scroll-padding-top: 80px;
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--wet-asphalt);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
-    color: var(--charcoal-blue);
-    font-weight: 700;
-}
-
-.section-title {
+header {
     text-align: center;
-    font-size: 2.25rem; /* 36px */
-    line-height: 2.5rem; /* 40px */
+    padding: 20px 0;
 }
 
-.subsection-title {
-    font-size: 1.5rem; /* 24px */
-    line-height: 2rem; /* 32px */
-    border-bottom: 2px solid var(--academic-blue);
-    padding-bottom: 0.5rem;
-    display: inline-block;
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    column-count: 2;
+    column-gap: 40px;
+    flex: 1;
 }
 
-#main-header.scrolled {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+section {
+    margin-bottom: 1em;
+    break-inside: avoid-column;
 }
 
-.nav-link.active {
-    color: var(--academic-blue);
-    font-weight: 600;
+h1, h2 {
+    font-weight: normal;
 }
 
-.tab-button {
-    border-color: transparent;
-    color: var(--silver-gray);
-}
-
-.tab-button.active {
-    border-color: var(--academic-blue);
-    color: var(--academic-blue);
-}
-
-@media (min-width: 768px) {
-    html {
-        scroll-padding-top: 72px;
-    }
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
 }
