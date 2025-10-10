@@ -13,17 +13,22 @@ header {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     width: 80%;
     margin: auto;
     padding: 20px 0;
-    column-count: 2;
-    column-gap: 40px;
+    gap: 40px;
+    flex: 1;
+}
+
+.left, .right {
     flex: 1;
 }
 
 section {
     margin-bottom: 1em;
-    break-inside: avoid-column;
 }
 
 h1, h2 {
